@@ -1,0 +1,5 @@
+### Script Credential ###
+
+$User = "DOMAIN\user"
+$PWord = ConvertTo-SecureString -String "yourpassword" -AsPlainText -Force
+$C = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User, $PWord
